@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="icon" type="image/x-icon" href="static/fav.ico">
+</head>
+<body>
+    <nav>
+        <a href="http://converterio.pythonanywhere.com/"><img src="https://i.postimg.cc/C55KjFBg/A-letter-tech-logo.png"></a>
+        <ul>
+          <li><a href="home">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="docextract">Doc Extractor</a></li>
+          <li><a href="history">History</a></li>
+        </ul>
+        <div class="dropdown">
+          <button class="dropbtn">AI Voices</button>
+          <div class="dropdown-content">
+            <a href="home">English IN</a>
+            <a href="englishus">English US</a>
+            <a href="frenchre">French</a>
+            <a href="spanishre">Spanish</a>
+          </div>
+        </div>
+        <br><br>
+        
+      </nav><br><br>
+      
+    <h1> History</h1>
+    <ul>
+        <!-- Loop through the history data and display each entry -->
+        {% for entry in user %}
+        <li class="entry">
+            <div class="timestamp">{{ entry.text }}</div>
+        </li>
+        {% endfor %}
+    </ul>
+ 
+</body>
+</html>

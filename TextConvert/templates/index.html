@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter.io - Text to Speech</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="icon" type="image/x-icon" href="static/fav.ico">
+</head>
+<body>
+  <nav>
+    <a href="http://converterio.pythonanywhere.com/"><img src="https://i.postimg.cc/C55KjFBg/A-letter-tech-logo.png"></a>
+    <ul>
+      <li><a href="home">Home</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="docextract">Doc Extractor</a></li>
+      <li><a href="history">History</a></li>
+    </ul>
+    <div class="dropdown">
+      <button class="dropbtn">AI Voices</button>
+      <div class="dropdown-content">
+        <a href="home">English IN</a>
+        <a href="englishus">English US</a>
+        <a href="frenchre">French</a>
+        <a href="spanishre">Spanish</a>
+      </div>
+    </div>
+    <a href="logout" class="logout-btn">Logout</a>
+    <br><br>
+    
+  </nav><br><br>
+  
+    <h1>Text to MP3 Converter</h1>
+    <form method="POST" action="/convert">
+      <label for="text">Enter Text to Convert: (English IN)</label>
+      <textarea id="text" name="text"></textarea>
+      <input type="submit" value="Convert to Speech" onclick="displayPopup()"></button>
+
+      <script>
+      function displayPopup() {
+      alert("Thank You for Using Our Service.");
+    }
+    </script>
+      
+      
+    </form><br><br><br><br><br><br>
+    
+
+
+
+    <div id="download-link"></div>
+    <footer>     <!--Footer-->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Contact Us</h3>    <!--Contact-->
+            <ul>
+              <li>Email: easysyntaxpython@gmail.com</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3>Follow Us</h3>            <!--Follow-->
+            <ul class="social-links">
+              <li><a href="https://www.youtube.com/@examhacker"><img src="https://i.postimg.cc/3RbX6sfF/ytpng-removebg-preview.png" style="width:50px;height:50px;"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/aayush-singh-se01/"><img src="https://i.postimg.cc/3JQMXfQ4/linkedin-removebg-preview.png" style="width:50px;height:50px;"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">    <!--Copyright-->
+        <p>Copyright &copy; 2023 converterio.pythonanywhere.com</p>
+      </div>
+    </footer>
+      
+    
+</body>
+</html>
